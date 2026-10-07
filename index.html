@@ -217,7 +217,7 @@
   .nb .tags{margin-top:6px;}
   .empty{font-size:0.9rem; color:var(--contour); font-style:italic;}
 
-  figure.photo{margin:18px 0 0; max-width:100%;}
+  figure.photo{margin:22px auto 0; width:min(940px, calc(100vw - 32px)); position:relative; left:50%; transform:translateX(-50%);}
   figure.photo img{width:100%; height:auto; display:block; border-radius:4px; border:1px solid var(--line);}
   figure.photo figcaption{font-size:0.78rem; color:var(--contour); margin-top:6px;}
 
@@ -452,9 +452,6 @@
     { title: "03 · Flood depth and extent difference maps",
       desc: "Scenario-versus-baseline flood depth and extent difference maps and summary tables from SFINCS maximum-depth rasters.",
       file: "notebooks/03_flood_comparison_maps.ipynb", tags: ["SFINCS","Python"] },
-    { title: "04 · Hydrograph, water level, velocity and storage comparison",
-      desc: "Compares discharge, water level, velocity and flood storage volume across scenarios and gauging stations from SFINCS output.",
-      file: "notebooks/04_hydrograph_storage_comparison.ipynb", tags: ["SFINCS","HydroMT","xarray"] },
   ];
 
   /* Links open the notebook on GitHub. On <user>.github.io this is derived automatically
